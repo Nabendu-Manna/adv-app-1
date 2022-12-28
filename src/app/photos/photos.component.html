@@ -1,0 +1,28 @@
+<!-- <mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Number</mat-label>
+  <input type="text"
+         placeholder="Pick one"
+         aria-label="Number"
+         matInput
+         [matAutocomplete]="auto">
+  <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+      {{option}}
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field> -->
+
+<div class="row row-cols-3 g-2">
+  <div class="col" *ngFor="let photo of allPhoto">
+    <div class="card" style="width: 18rem;">
+      <img [src]="photo.thumbnailUrl" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ photo.title }}</h5>
+        <!-- <p class="card-text">{{ photo.albumId }}</p> -->
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+

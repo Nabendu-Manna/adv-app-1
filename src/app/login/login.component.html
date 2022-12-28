@@ -1,0 +1,5 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">>
+  <input type="text" id="mobile" name="mobile" formControlName="mobile" maxlength="10" appNumberOnly>
+  <input type="password" id="password" name="password" formControlName="password">
+  <button mat-raised-button type="submit">Submit</button>
+</form>

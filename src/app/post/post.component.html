@@ -1,0 +1,17 @@
+<button routerLink="/all/post" class="btn btn-outline-primary"> back </button>
+<br>
+<hr>
+<br>
+
+<div class="card" style="width: 18rem;" *ngIf="post">
+  <div class="card-body">
+    <h5 class="card-title">{{ post.title }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted"> User Id {{ post.userId }}</h6>
+    <p class="card-text">
+      {{ post.body }}
+    </p>
+    <!-- <a href="#" class="card-link">Card link</a> -->
+  </div>
+</div>
+
+<br>
